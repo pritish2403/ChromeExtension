@@ -33,7 +33,7 @@ chrome.webNavigation.onCommitted.addListener(function (details) {
       target: {
         tabId: details.tabId
       },
-      files: ['jquery.min.js', 'js/ntc.js', 'colorblinding.js', 'colorDetector.js', 'popup.js']
+      files: ['jquery.min.js', 'ntc.js', 'colorblinding.js', 'colorDetector.js']
     }).then(() => {
       console.log('Scripts injected successfully into image tab.');
     }).catch(err => {
